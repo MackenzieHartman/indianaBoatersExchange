@@ -1,0 +1,204 @@
+<section ng-controller="ArticlesController" ng-init="findOne()">
+    <div class="page-header">
+        <h1>Edit Boat Profile</h1>
+    </div>
+<div class= "inputs">
+    <div class="col-md-5">
+        <form name="articleForm" class="form-horizontal" ng-submit="update(articleForm.$valid)" novalidate>
+            <fieldset>
+                <div class="form-group" show-errors>
+                    <label for="title">Headline</label>
+                        <input name="title" type="text" ng-model="article.title" id="title" class="form-control" placeholder="Title" required>
+                    <div ng-messages="articleForm.title.$error" role="alert">
+                        <p class="help-block error-text" ng-message="required">Article title is required.</p>
+                    </div>
+                </div>
+                
+                <div class="form-group">
+                    <label for="content">Description</label>
+                        <textarea name="content" ng-model="article.content" id="content" class="form-control" cols="30" rows="10" placeholder="Content"></textarea>
+                </div>
+
+                <div class="form-group" show-errors>
+                    <label for="title">Year</label>
+                    <input name="year" type="text" id="year" class="form-control" placeholder="Year">
+                </div>
+
+                <div class="row justify-content-start">
+                <div class="form-group" style="margin right: 0 !important" >
+                    <div class="col-sm-5 col-md-6"><label for="make">Make</label></div>
+                    <div class="col-sm-5 col-md-6"><label for="model">Model</label></div>
+                    <div class="col-sm-5 col-md-6"><input name="make" type="text"  id="make" class="form-control" placeholder="Make" required></div>
+                    <div class="col-sm-5 col-md-6"><input name="model" type="text" id="model" class="form-control" placeholder="Model" required></div>
+                </div>
+
+
+                <div class="row">
+                    <div class="col-sm-5 col-md-6"><label for="boat type">Boat Type</label></div>
+                    <div class="col-sm-5 col-md-6"><label for="length">Length</label></div>
+                    <div class="col-sm-5 col-md-6"><input name="boat type" type="text"  id="boat type" class="form-control" placeholder="Boat Type" required></div>
+                     <div class="col-sm-5 col-md-6"><input name="length" type="text" id="length" class="form-control" placeholder="Length" required></div>
+                </div><br>
+                
+                <div class="form-group">
+                    <div class="col-sm-5 col-md-6"><label for="fuel type">Fuel Type</label></div>
+                    <div class="col-sm-5 col-md-6"><label for="capacity">Capacity</label></div>
+                    <div class="col-sm-5 col-md-6"><input name="fuel type" type="text"  id="fuel type" class="form-control" placeholder="Fuel Type" required></div>
+                     <div class="col-sm-5 col-md-6"><input name="capacity" type="text" id="capacity" class="form-control" placeholder="Capacity" required></div>
+                </div>
+
+
+                <div class="row">
+                    <div class="col-sm-5 col-md-6"><label for="title">Average Cost/Fillup</label></div>
+                    <div class="col-sm-5 col-md-6"><label for="title">Policy</label></div>
+                    <div class="col-sm-5 col-md-6"><input name="title" type="text" id="title" class="form-control" placeholder="Average Cost/Fillup" required></div>
+                     <div class="col-sm-5 col-md-6"><input name="title" type="text" id="title" class="form-control" placeholder="Policy" required></div>
+                </div><br><br>
+            
+                    <div class="form-group" show-errors>
+                        <input type="submit" value="Update" class="btn btn-primary btn-lg active">
+                </div>
+                <div ng-show="error" class="text-danger">
+                    <strong ng-bind="error"></strong>
+                </div>
+            
+                    <div class="transbox1">
+                    <h5 class ="features" style="margin-left: 10px;"><strong>Features</strong> | Choose any many as you wish:</h5>  
+                        <!-- <h3>Features | Choose any many as you wish:</h3>    -->
+                            <div class="material-input">
+                                <input type="checkbox" id="form" name="test">
+                                <label for="checkbox">Air Conditioning</label>
+                            </div>
+                            <div class="material-input">
+                                <input type="checkbox" id="form" name="test">
+                                <label for="checkbox">Anchor</label>
+                            </div>
+                            <div class="material-input">
+                                <input type="checkbox" id="form" name="test">
+                                <label for="checkbox">Bimini Top</label>
+                            </div>
+                            <div class="material-input">
+                                <input type="checkbox" id="form" name="test">
+                                <label for="checkbox">Depth Finder</label>
+                            </div>
+                            <div class="material-input">
+                                <input type="checkbox" id="form" name="test">
+                                <label for="checkbox">Fish Finder</label>
+                            </div>
+                            <div class="material-input">
+                                <input type="checkbox" id="form" name="test">
+                                <label for="checkbox">Floatables | Tubes</label>
+                            </div>
+                            <div class="material-input">
+                                <input type="checkbox" id="form" name="test">
+                                <label for="checkbox">GPS</label>
+                            </div>
+                            <div class="material-input">
+                                <input type="checkbox" id="form" name="test">
+                                <label for="checkbox">Life Jackets</label>
+                            </div>
+                            <div class="material-input">
+                                <input type="checkbox" id="form" name="test">
+                                <label for="checkbox">Microwave</label>
+                            </div>
+                            <div class="material-input">
+                                <input type="checkbox" id="form" name="test">
+                                <label for="checkbox">Pets Allowed</label>
+                            </div>
+                            <div class="material-input">
+                                <input type="checkbox" id="form" name="test">
+                                <label for="checkbox">Refrigerator</label>
+                            </div>
+                            <div class="material-input">
+                                <input type="checkbox" id="form" name="test">
+                                <label for="checkbox">Shower</label>
+                            </div>
+                            <div class="material-input">
+                                <input type="checkbox" id="form" name="test">
+                                <label for="checkbox">Smoking Allowed</label>
+                            </div>
+                            <div class="material-input">
+                                <input type="checkbox" id="form" name="test">
+                                <label for="checkbox">Smoking Prohibited</label>
+                            </div>
+                            <div class="material-input">
+                                <input type="checkbox" id="form" name="test">
+                                <label for="checkbox">Stereo</label>
+                            </div>
+                            <div class="material-input">
+                                <input type="checkbox" id="form" name="test">
+                                <label for="checkbox">Television</label>
+                            </div>
+                            <div class="material-input">
+                                <input type="checkbox" id="form" name="test">
+                                <label for="checkbox">Toilet</label>
+                            </div>
+                        </div>
+                    </div>
+                <div>
+<!-- 
+            </fieldset>
+        </form>
+</section>
+ -->
+
+               
+
+
+
+<!-- 
+                    <textarea name="content" ng-model="content" id="content" class="form-control" cols="30" rows="10" placeholder="Please write a brief summary about the boat you are listing.">
+                    </textarea><br>
+                </div> -->
+
+
+                <!-- <div class="form-group" show-errors>
+                    <label for="title">Year</label> -->
+                   <!--  <input name="title" type="text" ng-model="title" id="title" class="form-control" placeholder="Year" required>
+                </div>
+ -->
+
+
+
+                <!--  <div class="form-group"><br> -->
+          <!--           <input type="submit" class="btn btn-primary btn-lg active">
+                </div>
+                <div ng-show="error" class="text-danger">
+                    <strong ng-bind="error"></strong>
+                </div> -->
+
+              
+
+
+<!-- 
+<section ng-controller="ArticlesController" ng-init="findOne()">
+    <div class="page-header">
+        <h1>Edit Boat Profile</h1>
+    </div>
+    <div class="col-md-12">
+        <form name="articleForm" class="form-horizontal" ng-submit="update(articleForm.$valid)" novalidate>
+            <fieldset>
+                <div class="form-group" show-errors>
+                    <label for="title">Headline</label>
+                        <input name="title" type="text" ng-model="article.title" id="title" class="form-control" placeholder="Title" required>
+                    <div ng-messages="articleForm.title.$error" role="alert">
+                        <p class="help-block error-text" ng-message="required">Article title is required.</p>
+                    </div>
+                </div>
+                
+                <div class="form-group">
+                    <label for="content">Description</label>
+                        <textarea name="content" ng-model="article.content" id="content" class="form-control" cols="30" rows="10" placeholder="Content"></textarea>
+                </div>
+ -->
+
+          <!--       <div class="form-group">
+                    <input type="submit" value="Update" class="btn btn-default">
+                </div>
+                <div ng-show="error" class="text-danger">
+                    <strong ng-bind="error"></strong> -->
+                </div>
+            </fieldset>
+        </form>
+    </div>
+</section>

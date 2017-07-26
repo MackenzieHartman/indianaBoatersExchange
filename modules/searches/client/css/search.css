@@ -1,0 +1,1766 @@
+/** {
+    margin: 0;
+    padding: 0;
+}
+*/
+#wrapper {
+    width: 1080px;
+    margin: 50px auto;
+}
+
+.image-container {
+    width: 250px;
+    height: 200px;
+    position: relative;
+    cursor: pointer;
+    overflow: hidden;
+    float: left;
+    margin: 10px;
+}
+
+.image-container img {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+
+.image-container .image-caption {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background: rgba(0, 0, 0, 0.6);
+    font-family: cursive;
+    text-align: center;
+}
+
+.image-caption h1 {
+    margin-top: 50px;
+    color: #fff;
+}
+
+.image-caption p {
+    color: #fff;
+}
+
+
+/*================================================*/
+
+figure {
+background: white;
+margin: 0;
+
+}
+
+.text-wrap {
+padding: 9%;
+}
+
+p {
+color: #848484;
+}
+
+figure.box1 {
+    font-family: 'Raleway', Arial, sans-serif;
+    position: relative;
+    float: left;
+    overflow: hidden;
+    margin: 10px 1%;
+    min-width: 220px;
+    max-width: 310px;
+    width: 100%;
+    background: #34495e;
+    color: #333;
+    text-align: center;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
+    font-size: 30px;
+    background-image: url(../images/box1.jpg); 
+}
+
+figure.box1 * {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-transition: all 0.35s ease;
+    transition: all 0.35s ease;
+}
+
+/* LOOK INTO THIS*/
+/*figure.box1 img {
+    max-width: 100%;
+    vertical-align: top;
+}*/
+
+/* POSITIONING OF QUOTES & ANIMATED ARROW BELOW IMAGES */
+figure.box1 .image {
+    position: relative;
+    border-bottom: 4px solid #34495e;
+    z-index: 1;
+}
+
+/* ANIMATED ARROW BELOW IMAGES */
+figure.box1 .image:before {
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 20px 20px 0 20px;
+    border-color: #34495e transparent transparent transparent;
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -15px);
+    transform: translate(-50%, -15px);
+    z-index: -1;
+    -webkit-transition: all 0.35s ease;
+    transition: all 0.35s ease;
+}
+
+/* CONTAINTER OF WHICH THE QUOTE IS IN */
+figure.box1 .image p {
+    font-weight: 500;
+    margin: 0;
+    padding: 0 30px;
+    line-height: 1.6em;
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    color: #ffffff;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+    opacity: 0;
+    font-style: italic;
+    font-size: 25px;
+
+}
+
+/* CAPTION BOX BELOW IMAGE */
+figure.box1 figcaption {
+    background-color: #ffffff;
+    padding: 25px;
+}
+/* ALLOWS THE CAPTION BOX TO BE SMALLER */
+figure.box1 h3 {
+    margin: 0 0 5px;
+    text-transform: uppercase;
+    font-weight: 400;
+}
+
+/* CHANGES BOLDNESS OF TITLE ON CAPTION */
+figure.box1 h3 span {
+    font-weight: 700;
+}
+
+/* CHANGES BOLDNESS AND MARGIN OF SUBTITLE ON CAPTION */
+figure.box1 h5 {
+    margin: 0 0 15px;
+    font-weight: 400;
+}
+
+figure.box1 i {
+    margin-right: 4px;
+    display: inline-block;
+    font-size: 24px;
+    color: #000000;
+    width: 35px;
+    height: 35px;
+    line-height: 35px;
+    background: white;
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.4);
+    background-color: rgba(0, 0, 0, 0.05);
+}
+
+figure.box1 i:hover {
+    background-color: #34495e;
+    color: white !important;
+}
+
+figure.box1:hover .image:before,
+figure.box1.hover .image:before {
+    border-color: #34495e transparent transparent transparent;
+    -webkit-transform: translate(-50%, 0px);
+    transform: translate(-50%, 0px);
+}
+
+/* QUOTE TEXT WHEN HOVERING */
+figure.box1:hover .image p,
+figure.box1.hover .image p {
+    opacity: 1;
+    background:#34495E;
+}
+
+/* BLUE HOVER BACKGROUND */
+figure.box1:hover img,
+figure.box1.hover img {
+    background:#34495E;
+    /*opacity: 0.2;*/
+    /*-webkit-filter: grayscale(100%);*/
+    /*filter: grayscale(100%);*/
+}
+
+/*========================================================================================*/
+
+figure.box2 {
+    font-family: 'Raleway', Arial, sans-serif;
+    position: relative;
+    float: left;
+    overflow: hidden;
+    margin: 10px 1%;
+    min-width: 220px;
+    max-width: 310px;
+    width: 100%;
+    background: #34495e;
+    color: #333;
+    text-align: center;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
+    font-size: 30px;
+    background-image: url(../images/box2.jpg); 
+}
+
+figure.box2 * {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-transition: all 0.35s ease;
+    transition: all 0.35s ease;
+}
+
+/* LOOK INTO THIS*/
+/*figure.box2 img {
+    max-width: 100%;
+    vertical-align: top;
+}*/
+
+/* POSITIONING OF QUOTES & ANIMATED ARROW BELOW IMAGES */
+figure.box2 .image {
+    position: relative;
+    border-bottom: 4px solid #34495e;
+    z-index: 1;
+}
+
+/* ANIMATED ARROW BELOW IMAGES */
+figure.box2 .image:before {
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 20px 20px 0 20px;
+    border-color: #34495e transparent transparent transparent;
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -15px);
+    transform: translate(-50%, -15px);
+    z-index: -1;
+    -webkit-transition: all 0.35s ease;
+    transition: all 0.35s ease;
+}
+
+/* CONTAINTER OF WHICH THE QUOTE IS IN */
+figure.box2 .image p {
+    font-weight: 500;
+    margin: 0;
+    padding: 0 30px;
+    line-height: 1.6em;
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    color: #ffffff;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+    opacity: 0;
+    font-style: italic;
+    font-size: 25px;
+
+}
+
+/* CAPTION BOX BELOW IMAGE */
+figure.box2 figcaption {
+    background-color: #ffffff;
+    padding: 25px;
+}
+/* ALLOWS THE CAPTION BOX TO BE SMALLER */
+figure.box2 h3 {
+    margin: 0 0 5px;
+    text-transform: uppercase;
+    font-weight: 400;
+}
+
+/* CHANGES BOLDNESS OF TITLE ON CAPTION */
+figure.box2 h3 span {
+    font-weight: 800;
+}
+
+/* CHANGES BOLDNESS AND MARGIN OF SUBTITLE ON CAPTION */
+figure.box2 h5 {
+    margin: 0 0 15px;
+    font-weight: 400;
+}
+
+figure.box2 i {
+    margin-right: 4px;
+    display: inline-block;
+    font-size: 24px;
+    color: #000000;
+    width: 35px;
+    height: 35px;
+    line-height: 35px;
+    background: white;
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.4);
+    background-color: rgba(0, 0, 0, 0.05);
+}
+
+figure.box2 i:hover {
+    background-color: #34495e;
+    color: white !important;
+}
+
+figure.box2:hover .image:before,
+figure.box2.hover .image:before {
+    border-color: #34495e transparent transparent transparent;
+    -webkit-transform: translate(-50%, 0px);
+    transform: translate(-50%, 0px);
+}
+
+/* QUOTE TEXT WHEN HOVERING */
+figure.box2:hover .image p,
+figure.box2.hover .image p {
+    opacity: 1;
+    background:#34495E;
+}
+
+/* BLUE HOVER BACKGROUND */
+figure.box2:hover img,
+figure.box2.hover img {
+    background:#34495E;
+    /*opacity: 0.2;*/
+    /*-webkit-filter: grayscale(100%);*/
+    /*filter: grayscale(100%);*/
+}
+
+
+/*========================================================================================*/
+
+figure.box3 {
+    font-family: 'Raleway', Arial, sans-serif;
+    position: relative;
+    float: left;
+    overflow: hidden;
+    margin: 10px 1%;
+    min-width: 220px;
+    max-width: 310px;
+    width: 100%;
+    background: #34495e;
+    color: #333;
+    text-align: center;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
+    font-size: 30px;
+    background-image: url(../images/box3.jpg); 
+}
+
+figure.box3 * {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-transition: all 0.35s ease;
+    transition: all 0.35s ease;
+}
+
+/* LOOK INTO THIS*/
+/*figure.box3 img {
+    max-width: 100%;
+    vertical-align: top;
+}*/
+
+/* POSITIONING OF QUOTES & ANIMATED ARROW BELOW IMAGES */
+figure.box3 .image {
+    position: relative;
+    border-bottom: 4px solid #34495e;
+    z-index: 1;
+}
+
+/* ANIMATED ARROW BELOW IMAGES */
+figure.box3 .image:before {
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 20px 20px 0 20px;
+    border-color: #34495e transparent transparent transparent;
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -15px);
+    transform: translate(-50%, -15px);
+    z-index: -1;
+    -webkit-transition: all 0.35s ease;
+    transition: all 0.35s ease;
+}
+
+/* CONTAINTER OF WHICH THE QUOTE IS IN */
+figure.box3 .image p {
+    font-weight: 500;
+    margin: 0;
+    padding: 0 30px;
+    line-height: 1.6em;
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    color: #ffffff;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+    opacity: 0;
+    font-style: italic;
+    font-size: 25px;
+
+}
+
+/* CAPTION BOX BELOW IMAGE */
+figure.box3 figcaption {
+    background-color: #ffffff;
+    padding: 25px;
+}
+/* ALLOWS THE CAPTION BOX TO BE SMALLER */
+figure.box3 h3 {
+    margin: 0 0 5px;
+    text-transform: uppercase;
+    font-weight: 400;
+}
+
+/* CHANGES BOLDNESS OF TITLE ON CAPTION */
+figure.box3 h3 span {
+    font-weight: 800;
+}
+
+/* CHANGES BOLDNESS AND MARGIN OF SUBTITLE ON CAPTION */
+figure.box3 h5 {
+    margin: 0 0 15px;
+    font-weight: 400;
+}
+
+figure.box3 i {
+    margin-right: 4px;
+    display: inline-block;
+    font-size: 24px;
+    color: #000000;
+    width: 35px;
+    height: 35px;
+    line-height: 35px;
+    background: white;
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.4);
+    background-color: rgba(0, 0, 0, 0.05);
+}
+
+figure.box3 i:hover {
+    background-color: #34495e;
+    color: white !important;
+}
+
+figure.box3:hover .image:before,
+figure.box3.hover .image:before {
+    border-color: #34495e transparent transparent transparent;
+    -webkit-transform: translate(-50%, 0px);
+    transform: translate(-50%, 0px);
+}
+
+/* QUOTE TEXT WHEN HOVERING */
+figure.box3:hover .image p,
+figure.box3.hover .image p {
+    opacity: 1;
+    background:#34495E;
+}
+
+/* BLUE HOVER BACKGROUND */
+figure.box3:hover img,
+figure.box3.hover img {
+    background:#34495E;
+    /*opacity: 0.2;*/
+    /*-webkit-filter: grayscale(100%);*/
+    /*filter: grayscale(100%);*/
+}
+
+/*========================================================================================*/
+
+figure.box4 {
+    font-family: 'Raleway', Arial, sans-serif;
+    position: relative;
+    float: left;
+    overflow: hidden;
+    margin: 10px 1%;
+    min-width: 220px;
+    max-width: 310px;
+    width: 100%;
+    background: #34495e;
+    color: #333;
+    text-align: center;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
+    font-size: 30px;
+    background-image: url(../images/box4.jpg); 
+}
+
+figure.box4 * {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-transition: all 0.35s ease;
+    transition: all 0.35s ease;
+}
+
+/* LOOK INTO THIS*/
+/*figure.box4 img {
+    max-width: 100%;
+    vertical-align: top;
+}*/
+
+/* POSITIONING OF QUOTES & ANIMATED ARROW BELOW IMAGES */
+figure.box4 .image {
+    position: relative;
+    border-bottom: 4px solid #34495e;
+    z-index: 1;
+}
+
+/* ANIMATED ARROW BELOW IMAGES */
+figure.box4 .image:before {
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 20px 20px 0 20px;
+    border-color: #34495e transparent transparent transparent;
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -15px);
+    transform: translate(-50%, -15px);
+    z-index: -1;
+    -webkit-transition: all 0.35s ease;
+    transition: all 0.35s ease;
+}
+
+/* CONTAINTER OF WHICH THE QUOTE IS IN */
+figure.box4 .image p {
+    font-weight: 500;
+    margin: 0;
+    padding: 0 30px;
+    line-height: 1.6em;
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    color: #ffffff;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+    opacity: 0;
+    font-style: italic;
+    font-size: 25px;
+
+}
+
+/* CAPTION BOX BELOW IMAGE */
+figure.box4 figcaption {
+    background-color: #ffffff;
+    padding: 25px;
+}
+/* ALLOWS THE CAPTION BOX TO BE SMALLER */
+figure.box4 h3 {
+    margin: 0 0 5px;
+    text-transform: uppercase;
+    font-weight: 400;
+}
+
+/* CHANGES BOLDNESS OF TITLE ON CAPTION */
+figure.box4 h3 span {
+    font-weight: 800;
+}
+
+/* CHANGES BOLDNESS AND MARGIN OF SUBTITLE ON CAPTION */
+figure.box3 h5 {
+    margin: 0 0 15px;
+    font-weight: 400;
+}
+
+figure.box4 i {
+    margin-right: 4px;
+    display: inline-block;
+    font-size: 24px;
+    color: #000000;
+    width: 35px;
+    height: 35px;
+    line-height: 35px;
+    background: white;
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.4);
+    background-color: rgba(0, 0, 0, 0.05);
+}
+
+figure.box4 i:hover {
+    background-color: #34495e;
+    color: white !important;
+}
+
+figure.box4:hover .image:before,
+figure.box4.hover .image:before {
+    border-color: #34495e transparent transparent transparent;
+    -webkit-transform: translate(-50%, 0px);
+    transform: translate(-50%, 0px);
+}
+
+/* QUOTE TEXT WHEN HOVERING */
+figure.box4:hover .image p,
+figure.box4.hover .image p {
+    opacity: 1;
+    background:#34495E;
+}
+
+/* BLUE HOVER BACKGROUND */
+figure.box4:hover img,
+figure.box4.hover img {
+    background:#34495E;
+    /*opacity: 0.2;*/
+    /*-webkit-filter: grayscale(100%);*/
+    /*filter: grayscale(100%);*/
+}
+
+/*========================================================================================*/
+
+figure.box5 {
+    font-family: 'Raleway', Arial, sans-serif;
+    position: relative;
+    float: left;
+    overflow: hidden;
+    margin: 10px 1%;
+    min-width: 220px;
+    max-width: 310px;
+    width: 100%;
+    background: #34495e;
+    color: #333;
+    text-align: center;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
+    font-size: 30px;
+    background-image: url(../images/box5.jpg); 
+}
+
+figure.box5 * {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-transition: all 0.35s ease;
+    transition: all 0.35s ease;
+}
+
+/* LOOK INTO THIS*/
+/*figure.box5 img {
+    max-width: 100%;
+    vertical-align: top;
+}*/
+
+/* POSITIONING OF QUOTES & ANIMATED ARROW BELOW IMAGES */
+figure.box5 .image {
+    position: relative;
+    border-bottom: 4px solid #34495e;
+    z-index: 1;
+}
+
+/* ANIMATED ARROW BELOW IMAGES */
+figure.box5 .image:before {
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 20px 20px 0 20px;
+    border-color: #34495e transparent transparent transparent;
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -15px);
+    transform: translate(-50%, -15px);
+    z-index: -1;
+    -webkit-transition: all 0.35s ease;
+    transition: all 0.35s ease;
+}
+
+/* CONTAINTER OF WHICH THE QUOTE IS IN */
+figure.box5 .image p {
+    font-weight: 500;
+    margin: 0;
+    padding: 0 30px;
+    line-height: 1.6em;
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    color: #ffffff;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+    opacity: 0;
+    font-style: italic;
+    font-size: 25px;
+
+}
+
+/* CAPTION BOX BELOW IMAGE */
+figure.box5 figcaption {
+    background-color: #ffffff;
+    padding: 25px;
+}
+/* ALLOWS THE CAPTION BOX TO BE SMALLER */
+figure.box5 h3 {
+    margin: 0 0 5px;
+    text-transform: uppercase;
+    font-weight: 400;
+}
+
+/* CHANGES BOLDNESS OF TITLE ON CAPTION */
+figure.box5 h3 span {
+    font-weight: 800;
+}
+
+/* CHANGES BOLDNESS AND MARGIN OF SUBTITLE ON CAPTION */
+figure.box5 h5 {
+    margin: 0 0 15px;
+    font-weight: 400;
+}
+
+figure.box5 i {
+    margin-right: 4px;
+    display: inline-block;
+    font-size: 24px;
+    color: #000000;
+    width: 35px;
+    height: 35px;
+    line-height: 35px;
+    background: white;
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.4);
+    background-color: rgba(0, 0, 0, 0.05);
+}
+
+figure.box5 i:hover {
+    background-color: #34495e;
+    color: white !important;
+}
+
+figure.box5:hover .image:before,
+figure.box5.hover .image:before {
+    border-color: #34495e transparent transparent transparent;
+    -webkit-transform: translate(-50%, 0px);
+    transform: translate(-50%, 0px);
+}
+
+/* QUOTE TEXT WHEN HOVERING */
+figure.box5:hover .image p,
+figure.box5.hover .image p {
+    opacity: 1;
+    background:#34495E;
+}
+
+/* BLUE HOVER BACKGROUND */
+figure.box5:hover img,
+figure.box5.hover img {
+    background:#34495E;
+    /*opacity: 0.2;*/
+    /*-webkit-filter: grayscale(100%);*/
+    /*filter: grayscale(100%);*/
+}
+
+/*========================================================================================*/
+
+figure.box6 {
+    font-family: 'Raleway', Arial, sans-serif;
+    position: relative;
+    float: left;
+    overflow: hidden;
+    margin: 10px 1%;
+    min-width: 220px;
+    max-width: 310px;
+    width: 100%;
+    background: #34495e;
+    color: #333;
+    text-align: center;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
+    font-size: 30px;
+    background-image: url(../images/box6.jpg); 
+}
+
+figure.box6 * {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-transition: all 0.35s ease;
+    transition: all 0.35s ease;
+}
+
+/* LOOK INTO THIS*/
+/*figure.box5 img {
+    max-width: 100%;
+    vertical-align: top;
+}*/
+
+/* POSITIONING OF QUOTES & ANIMATED ARROW BELOW IMAGES */
+figure.box6 .image {
+    position: relative;
+    border-bottom: 4px solid #34495e;
+    z-index: 1;
+}
+
+/* ANIMATED ARROW BELOW IMAGES */
+figure.box6 .image:before {
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 20px 20px 0 20px;
+    border-color: #34495e transparent transparent transparent;
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -15px);
+    transform: translate(-50%, -15px);
+    z-index: -1;
+    -webkit-transition: all 0.35s ease;
+    transition: all 0.35s ease;
+}
+
+/* CONTAINTER OF WHICH THE QUOTE IS IN */
+figure.box6 .image p {
+    font-weight: 500;
+    margin: 0;
+    padding: 0 30px;
+    line-height: 1.6em;
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    color: #ffffff;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+    opacity: 0;
+    font-style: italic;
+    font-size: 25px;
+
+}
+
+/* CAPTION BOX BELOW IMAGE */
+figure.box6 figcaption {
+    background-color: #ffffff;
+    padding: 25px;
+}
+/* ALLOWS THE CAPTION BOX TO BE SMALLER */
+figure.box6 h3 {
+    margin: 0 0 5px;
+    text-transform: uppercase;
+    font-weight: 400;
+}
+
+/* CHANGES BOLDNESS OF TITLE ON CAPTION */
+figure.box6 h3 span {
+    font-weight: 800;
+}
+
+/* CHANGES BOLDNESS AND MARGIN OF SUBTITLE ON CAPTION */
+figure.box6 h5 {
+    margin: 0 0 15px;
+    font-weight: 400;
+}
+
+figure.box6 i {
+    margin-right: 4px;
+    display: inline-block;
+    font-size: 24px;
+    color: #000000;
+    width: 35px;
+    height: 35px;
+    line-height: 35px;
+    background: white;
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.4);
+    background-color: rgba(0, 0, 0, 0.05);
+}
+
+figure.box6 i:hover {
+    background-color: #34495e;
+    color: white !important;
+}
+
+figure.box6:hover .image:before,
+figure.box6.hover .image:before {
+    border-color: #34495e transparent transparent transparent;
+    -webkit-transform: translate(-50%, 0px);
+    transform: translate(-50%, 0px);
+}
+
+/* QUOTE TEXT WHEN HOVERING */
+figure.box6:hover .image p,
+figure.box6.hover .image p {
+    opacity: 1;
+    background:#34495E;
+}
+
+/* BLUE HOVER BACKGROUND */
+figure.box6:hover img,
+figure.box6.hover img {
+    background:#34495E;
+    /*opacity: 0.2;*/
+    /*-webkit-filter: grayscale(100%);*/
+    /*filter: grayscale(100%);*/
+}
+
+/*========================================================================================*/
+
+figure.box7 {
+    font-family: 'Raleway', Arial, sans-serif;
+    position: relative;
+    float: left;
+    overflow: hidden;
+    margin: 10px 1%;
+    min-width: 220px;
+    max-width: 310px;
+    width: 100%;
+    background: #34495e;
+    color: #333;
+    text-align: center;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
+    font-size: 30px;
+    background-image: url(../images/box7.jpg); 
+}
+
+figure.box7 * {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-transition: all 0.35s ease;
+    transition: all 0.35s ease;
+}
+
+/* LOOK INTO THIS*/
+/*figure.box7 img {
+    max-width: 100%;
+    vertical-align: top;
+}*/
+
+/* POSITIONING OF QUOTES & ANIMATED ARROW BELOW IMAGES */
+figure.box7 .image {
+    position: relative;
+    border-bottom: 4px solid #34495e;
+    z-index: 1;
+}
+
+/* ANIMATED ARROW BELOW IMAGES */
+figure.box7 .image:before {
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 20px 20px 0 20px;
+    border-color: #34495e transparent transparent transparent;
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -15px);
+    transform: translate(-50%, -15px);
+    z-index: -1;
+    -webkit-transition: all 0.35s ease;
+    transition: all 0.35s ease;
+}
+
+/* CONTAINTER OF WHICH THE QUOTE IS IN */
+figure.box7 .image p {
+    font-weight: 500;
+    margin: 0;
+    padding: 0 30px;
+    line-height: 1.6em;
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    color: #ffffff;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+    opacity: 0;
+    font-style: italic;
+    font-size: 25px;
+
+}
+
+/* CAPTION BOX BELOW IMAGE */
+figure.box7 figcaption {
+    background-color: #ffffff;
+    padding: 25px;
+}
+/* ALLOWS THE CAPTION BOX TO BE SMALLER */
+figure.box7 h3 {
+    margin: 0 0 5px;
+    text-transform: uppercase;
+    font-weight: 400;
+}
+
+/* CHANGES BOLDNESS OF TITLE ON CAPTION */
+figure.box7 h3 span {
+    font-weight: 800;
+}
+
+/* CHANGES BOLDNESS AND MARGIN OF SUBTITLE ON CAPTION */
+figure.box7 h5 {
+    margin: 0 0 15px;
+    font-weight: 400;
+}
+
+figure.box7 i {
+    margin-right: 4px;
+    display: inline-block;
+    font-size: 24px;
+    color: #000000;
+    width: 35px;
+    height: 35px;
+    line-height: 35px;
+    background: white;
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.4);
+    background-color: rgba(0, 0, 0, 0.05);
+}
+
+figure.box7 i:hover {
+    background-color: #34495e;
+    color: white !important;
+}
+
+figure.box7:hover .image:before,
+figure.box7.hover .image:before {
+    border-color: #34495e transparent transparent transparent;
+    -webkit-transform: translate(-50%, 0px);
+    transform: translate(-50%, 0px);
+}
+
+/* QUOTE TEXT WHEN HOVERING */
+figure.box7:hover .image p,
+figure.box7.hover .image p {
+    opacity: 1;
+    background:#34495E;
+}
+
+/* BLUE HOVER BACKGROUND */
+figure.box7:hover img,
+figure.box7.hover img {
+    background:#34495E;
+    /*opacity: 0.2;*/
+    /*-webkit-filter: grayscale(100%);*/
+    /*filter: grayscale(100%);*/
+}
+
+/*========================================================================================*/
+
+figure.box8 {
+    font-family: 'Raleway', Arial, sans-serif;
+    position: relative;
+    float: left;
+    overflow: hidden;
+    margin: 10px 1%;
+    min-width: 220px;
+    max-width: 310px;
+    width: 100%;
+    background: #34495e;
+    color: #333;
+    text-align: center;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
+    font-size: 30px;
+    background-image: url(../images/box8.jpg); 
+}
+
+figure.box8 * {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-transition: all 0.35s ease;
+    transition: all 0.35s ease;
+}
+
+/* LOOK INTO THIS*/
+/*figure.box8 img {
+    max-width: 100%;
+    vertical-align: top;
+}*/
+
+/* POSITIONING OF QUOTES & ANIMATED ARROW BELOW IMAGES */
+figure.box8 .image {
+    position: relative;
+    border-bottom: 4px solid #34495e;
+    z-index: 1;
+}
+
+/* ANIMATED ARROW BELOW IMAGES */
+figure.box8 .image:before {
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 20px 20px 0 20px;
+    border-color: #34495e transparent transparent transparent;
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -15px);
+    transform: translate(-50%, -15px);
+    z-index: -1;
+    -webkit-transition: all 0.35s ease;
+    transition: all 0.35s ease;
+}
+
+/* CONTAINTER OF WHICH THE QUOTE IS IN */
+figure.box8 .image p {
+    font-weight: 500;
+    margin: 0;
+    padding: 0 30px;
+    line-height: 1.6em;
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    color: #ffffff;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+    opacity: 0;
+    font-style: italic;
+    font-size: 25px;
+
+}
+
+/* CAPTION BOX BELOW IMAGE */
+figure.box8 figcaption {
+    background-color: #ffffff;
+    padding: 25px;
+}
+/* ALLOWS THE CAPTION BOX TO BE SMALLER */
+figure.box8 h3 {
+    margin: 0 0 5px;
+    text-transform: uppercase;
+    font-weight: 400;
+}
+
+/* CHANGES BOLDNESS OF TITLE ON CAPTION */
+figure.box8 h3 span {
+    font-weight: 800;
+}
+
+/* CHANGES BOLDNESS AND MARGIN OF SUBTITLE ON CAPTION */
+figure.box8 h5 {
+    margin: 0 0 15px;
+    font-weight: 400;
+}
+
+figure.box8 i {
+    margin-right: 4px;
+    display: inline-block;
+    font-size: 24px;
+    color: #000000;
+    width: 35px;
+    height: 35px;
+    line-height: 35px;
+    background: white;
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.4);
+    background-color: rgba(0, 0, 0, 0.05);
+}
+
+figure.box8 i:hover {
+    background-color: #34495e;
+    color: white !important;
+}
+
+figure.box8:hover .image:before,
+figure.box8.hover .image:before {
+    border-color: #34495e transparent transparent transparent;
+    -webkit-transform: translate(-50%, 0px);
+    transform: translate(-50%, 0px);
+}
+
+/* QUOTE TEXT WHEN HOVERING */
+figure.box8:hover .image p,
+figure.box8.hover .image p {
+    opacity: 1;
+    background:#34495E;
+}
+
+/* BLUE HOVER BACKGROUND */
+figure.box8:hover img,
+figure.box8.hover img {
+    background:#34495E;
+    /*opacity: 0.2;*/
+    /*-webkit-filter: grayscale(100%);*/
+    /*filter: grayscale(100%);*/
+}
+
+/*========================================================================================*/
+
+figure.box9 {
+    font-family: 'Raleway', Arial, sans-serif;
+    position: relative;
+    float: left;
+    overflow: hidden;
+    margin: 10px 1%;
+    min-width: 220px;
+    max-width: 310px;
+    width: 100%;
+    background: #34495e;
+    color: #333;
+    text-align: center;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
+    font-size: 30px;
+    background-image: url(../images/box9.jpg); 
+}
+
+figure.box9 * {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-transition: all 0.35s ease;
+    transition: all 0.35s ease;
+}
+
+/* LOOK INTO THIS*/
+/*figure.box9 img {
+    max-width: 100%;
+    vertical-align: top;
+}*/
+
+/* POSITIONING OF QUOTES & ANIMATED ARROW BELOW IMAGES */
+figure.box9 .image {
+    position: relative;
+    border-bottom: 4px solid #34495e;
+    z-index: 1;
+}
+
+/* ANIMATED ARROW BELOW IMAGES */
+figure.box9 .image:before {
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 20px 20px 0 20px;
+    border-color: #34495e transparent transparent transparent;
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -15px);
+    transform: translate(-50%, -15px);
+    z-index: -1;
+    -webkit-transition: all 0.35s ease;
+    transition: all 0.35s ease;
+}
+
+/* CONTAINTER OF WHICH THE QUOTE IS IN */
+figure.box9 .image p {
+    font-weight: 500;
+    margin: 0;
+    padding: 0 30px;
+    line-height: 1.6em;
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    color: #ffffff;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+    opacity: 0;
+    font-style: italic;
+    font-size: 25px;
+
+}
+
+/* CAPTION BOX BELOW IMAGE */
+figure.box9 figcaption {
+    background-color: #ffffff;
+    padding: 25px;
+}
+/* ALLOWS THE CAPTION BOX TO BE SMALLER */
+figure.box9 h3 {
+    margin: 0 0 5px;
+    text-transform: uppercase;
+    font-weight: 400;
+}
+
+/* CHANGES BOLDNESS OF TITLE ON CAPTION */
+figure.box9 h3 span {
+    font-weight: 800;
+}
+
+/* CHANGES BOLDNESS AND MARGIN OF SUBTITLE ON CAPTION */
+figure.box9 h5 {
+    margin: 0 0 15px;
+    font-weight: 400;
+}
+
+figure.box9 i {
+    margin-right: 4px;
+    display: inline-block;
+    font-size: 24px;
+    color: #000000;
+    width: 35px;
+    height: 35px;
+    line-height: 35px;
+    background: white;
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.4);
+    background-color: rgba(0, 0, 0, 0.05);
+}
+
+figure.box9 i:hover {
+    background-color: #34495e;
+    color: white !important;
+}
+
+figure.box9:hover .image:before,
+figure.box9.hover .image:before {
+    border-color: #34495e transparent transparent transparent;
+    -webkit-transform: translate(-50%, 0px);
+    transform: translate(-50%, 0px);
+}
+
+/* QUOTE TEXT WHEN HOVERING */
+figure.box9:hover .image p,
+figure.box9.hover .image p {
+    opacity: 1;
+    background:#34495E;
+}
+
+/* BLUE HOVER BACKGROUND */
+figure.box9:hover img,
+figure.box9.hover img {
+    background:#34495E;
+    /*opacity: 0.2;*/
+    /*-webkit-filter: grayscale(100%);*/
+    /*filter: grayscale(100%);*/
+}
+
+/*========================================================================================*/
+
+figure.box10 {
+    font-family: 'Raleway', Arial, sans-serif;
+    position: relative;
+    float: left;
+    overflow: hidden;
+    margin: 10px 1%;
+    min-width: 220px;
+    max-width: 310px;
+    width: 100%;
+    background: #34495e;
+    color: #333;
+    text-align: center;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
+    font-size: 30px;
+    background-image: url(../images/box10.jpg); 
+}
+
+figure.box10 * {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-transition: all 0.35s ease;
+    transition: all 0.35s ease;
+}
+
+/* LOOK INTO THIS*/
+/*figure.box10 img {
+    max-width: 100%;
+    vertical-align: top;
+}*/
+
+/* POSITIONING OF QUOTES & ANIMATED ARROW BELOW IMAGES */
+figure.box10 .image {
+    position: relative;
+    border-bottom: 4px solid #34495e;
+    z-index: 1;
+}
+
+/* ANIMATED ARROW BELOW IMAGES */
+figure.box10 .image:before {
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 20px 20px 0 20px;
+    border-color: #34495e transparent transparent transparent;
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -15px);
+    transform: translate(-50%, -15px);
+    z-index: -1;
+    -webkit-transition: all 0.35s ease;
+    transition: all 0.35s ease;
+}
+
+/* CONTAINTER OF WHICH THE QUOTE IS IN */
+figure.box10 .image p {
+    font-weight: 500;
+    margin: 0;
+    padding: 0 30px;
+    line-height: 1.6em;
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    color: #ffffff;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+    opacity: 0;
+    font-style: italic;
+    font-size: 25px;
+
+}
+
+/* CAPTION BOX BELOW IMAGE */
+figure.box10 figcaption {
+    background-color: #ffffff;
+    padding: 25px;
+}
+/* ALLOWS THE CAPTION BOX TO BE SMALLER */
+figure.box10 h3 {
+    margin: 0 0 5px;
+    text-transform: uppercase;
+    font-weight: 400;
+}
+
+/* CHANGES BOLDNESS OF TITLE ON CAPTION */
+figure.box10 h3 span {
+    font-weight: 800;
+}
+
+/* CHANGES BOLDNESS AND MARGIN OF SUBTITLE ON CAPTION */
+figure.box10 h5 {
+    margin: 0 0 15px;
+    font-weight: 400;
+}
+
+figure.box10 i {
+    margin-right: 4px;
+    display: inline-block;
+    font-size: 24px;
+    color: #000000;
+    width: 35px;
+    height: 35px;
+    line-height: 35px;
+    background: white;
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.4);
+    background-color: rgba(0, 0, 0, 0.05);
+}
+
+figure.box10 i:hover {
+    background-color: #34495e;
+    color: white !important;
+}
+
+figure.box10:hover .image:before,
+figure.box10.hover .image:before {
+    border-color: #34495e transparent transparent transparent;
+    -webkit-transform: translate(-50%, 0px);
+    transform: translate(-50%, 0px);
+}
+
+/* QUOTE TEXT WHEN HOVERING */
+figure.box10:hover .image p,
+figure.box10.hover .image p {
+    opacity: 1;
+    background:#34495E;
+}
+
+/* BLUE HOVER BACKGROUND */
+figure.box10:hover img,
+figure.box10.hover img {
+    background:#34495E;
+    /*opacity: 0.2;*/
+    /*-webkit-filter: grayscale(100%);*/
+    /*filter: grayscale(100%);*/
+}
+
+/*========================================================================================*/
+
+figure.box11 {
+    font-family: 'Raleway', Arial, sans-serif;
+    position: relative;
+    float: left;
+    overflow: hidden;
+    margin: 10px 1%;
+    min-width: 220px;
+    max-width: 310px;
+    width: 100%;
+    background: #34495e;
+    color: #333;
+    text-align: center;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
+    font-size: 30px;
+    background-image: url(../images/box11.jpg); 
+}
+
+figure.box11 * {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-transition: all 0.35s ease;
+    transition: all 0.35s ease;
+}
+
+/* LOOK INTO THIS*/
+/*figure.box11 img {
+    max-width: 100%;
+    vertical-align: top;
+}*/
+
+/* POSITIONING OF QUOTES & ANIMATED ARROW BELOW IMAGES */
+figure.box11 .image {
+    position: relative;
+    border-bottom: 4px solid #34495e;
+    z-index: 1;
+}
+
+/* ANIMATED ARROW BELOW IMAGES */
+figure.box11 .image:before {
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 20px 20px 0 20px;
+    border-color: #34495e transparent transparent transparent;
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -15px);
+    transform: translate(-50%, -15px);
+    z-index: -1;
+    -webkit-transition: all 0.35s ease;
+    transition: all 0.35s ease;
+}
+
+/* CONTAINTER OF WHICH THE QUOTE IS IN */
+figure.box11 .image p {
+    font-weight: 500;
+    margin: 0;
+    padding: 0 30px;
+    line-height: 1.6em;
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    color: #ffffff;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+    opacity: 0;
+    font-style: italic;
+    font-size: 25px;
+
+}
+
+/* CAPTION BOX BELOW IMAGE */
+figure.box11 figcaption {
+    background-color: #ffffff;
+    padding: 25px;
+}
+/* ALLOWS THE CAPTION BOX TO BE SMALLER */
+figure.box11 h3 {
+    margin: 0 0 5px;
+    text-transform: uppercase;
+    font-weight: 400;
+}
+
+/* CHANGES BOLDNESS OF TITLE ON CAPTION */
+figure.box11 h3 span {
+    font-weight: 800;
+}
+
+/* CHANGES BOLDNESS AND MARGIN OF SUBTITLE ON CAPTION */
+figure.box11 h5 {
+    margin: 0 0 15px;
+    font-weight: 400;
+}
+
+figure.box11 i {
+    margin-right: 4px;
+    display: inline-block;
+    font-size: 24px;
+    color: #000000;
+    width: 35px;
+    height: 35px;
+    line-height: 35px;
+    background: white;
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.4);
+    background-color: rgba(0, 0, 0, 0.05);
+}
+
+figure.box11 i:hover {
+    background-color: #34495e;
+    color: white !important;
+}
+
+figure.box11:hover .image:before,
+figure.box11.hover .image:before {
+    border-color: #34495e transparent transparent transparent;
+    -webkit-transform: translate(-50%, 0px);
+    transform: translate(-50%, 0px);
+}
+
+/* QUOTE TEXT WHEN HOVERING */
+figure.box11:hover .image p,
+figure.box11.hover .image p {
+    opacity: 1;
+    background:#34495E;
+}
+
+/* BLUE HOVER BACKGROUND */
+figure.box11:hover img,
+figure.box11.hover img {
+    background:#34495E;
+    /*opacity: 0.2;*/
+    /*-webkit-filter: grayscale(100%);*/
+    /*filter: grayscale(100%);*/
+}
+
+/*========================================================================================*/
+
+figure.box12 {
+    font-family: 'Raleway', Arial, sans-serif;
+    position: relative;
+    float: left;
+    overflow: hidden;
+    margin: 10px 1%;
+    min-width: 220px;
+    max-width: 310px;
+    width: 100%;
+    background: #34495e;
+    color: #333;
+    text-align: center;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
+    font-size: 30px;
+    background-image: url(../images/box12.jpg); 
+}
+
+figure.box12 * {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-transition: all 0.35s ease;
+    transition: all 0.35s ease;
+}
+
+/* LOOK INTO THIS*/
+/*figure.box12 img {
+    max-width: 100%;
+    vertical-align: top;
+}*/
+
+/* POSITIONING OF QUOTES & ANIMATED ARROW BELOW IMAGES */
+figure.box12 .image {
+    position: relative;
+    border-bottom: 4px solid #34495e;
+    z-index: 1;
+}
+
+/* ANIMATED ARROW BELOW IMAGES */
+figure.box12 .image:before {
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 20px 20px 0 20px;
+    border-color: #34495e transparent transparent transparent;
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -15px);
+    transform: translate(-50%, -15px);
+    z-index: -1;
+    -webkit-transition: all 0.35s ease;
+    transition: all 0.35s ease;
+}
+
+/* CONTAINTER OF WHICH THE QUOTE IS IN */
+figure.box12 .image p {
+    font-weight: 500;
+    margin: 0;
+    padding: 0 30px;
+    line-height: 1.6em;
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    color: #ffffff;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+    opacity: 0;
+    font-style: italic;
+    font-size: 25px;
+
+}
+
+/* CAPTION BOX BELOW IMAGE */
+figure.box12 figcaption {
+    background-color: #ffffff;
+    padding: 25px;
+}
+/* ALLOWS THE CAPTION BOX TO BE SMALLER */
+figure.box12 h3 {
+    margin: 0 0 5px;
+    text-transform: uppercase;
+    font-weight: 400;
+}
+
+/* CHANGES BOLDNESS OF TITLE ON CAPTION */
+figure.box12 h3 span {
+    font-weight: 800;
+}
+
+/* CHANGES BOLDNESS AND MARGIN OF SUBTITLE ON CAPTION */
+figure.box12 h5 {
+    margin: 0 0 15px;
+    font-weight: 400;
+}
+
+figure.box12 i {
+    margin-right: 4px;
+    display: inline-block;
+    font-size: 24px;
+    color: #000000;
+    width: 35px;
+    height: 35px;
+    line-height: 35px;
+    background: white;
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.4);
+    background-color: rgba(0, 0, 0, 0.05);
+}
+
+figure.box12 i:hover {
+    background-color: #34495e;
+    color: white !important;
+}
+
+figure.box12:hover .image:before,
+figure.box12.hover .image:before {
+    border-color: #34495e transparent transparent transparent;
+    -webkit-transform: translate(-50%, 0px);
+    transform: translate(-50%, 0px);
+}
+
+/* QUOTE TEXT WHEN HOVERING */
+figure.box12:hover .image p,
+figure.box12.hover .image p {
+    opacity: 1;
+    background:#34495E;
+}
+
+/* BLUE HOVER BACKGROUND */
+figure.box12:hover img,
+figure.box12.hover img {
+    background:#34495E;
+    /*opacity: 0.2;*/
+    /*-webkit-filter: grayscale(100%);*/
+    /*filter: grayscale(100%);*/
+}
+
+/*========================================================================================*/
+
+/* STAR RATING */
+
+.rating > span:hover:before {
+   content: "\2605";
+   position: absolute;
+}
+
+.rating {
+  unicode-bidi: bidi-override;
+  direction: rtl;
+  font-size: 40px;
+  padding-top: 4px;
+}
+.rating > span:hover:before,
+.rating > span:hover ~ span:before {
+/*.rating > span:checked ~ span:before{,*/ /* show gold star when clicked */
+   content: "\2605";
+   position: absolute;
+}
+
+.stars{
+    font: 20px;
+}
+
+h3{
+    padding-bottom: 10px;
+}
+
+h5{
+    font-size: 18px;
+    padding-bottom: 10px;
+}
+
+h6{
+    font-size: 16px;                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          
+}

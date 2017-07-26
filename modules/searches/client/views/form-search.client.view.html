@@ -1,0 +1,118 @@
+<section ng-controller="HomeController">
+    <div class="text-center">
+        <div class="row">
+            <div class="col-md-6 col-md-offset-3 col-sm-6 col-sm-offset-3 col-xs-12">
+                <br><br><br><br><br><br><br>
+                <h2>Select a Lake</h2>
+            </div>
+        </div>
+<!--             <a class="btn btn-primary btn-md" href="/searches">Search Boats</a> -->
+<!--             <a class="btn btn-primary btn-md" href="#" target="_blank">Indiana Lakes</a> -->
+<!--             <span class = "btn btn-default glyphicon glyphicon-search" id = "press"></span>
+            <input type ="text" id ="search" name ='search' placeholder ='Search...' autocomplete = "off" required/>  -->
+        <center>
+        <div class="form-group show-errors"> 
+            <select name="selectlake" class="form-control" ng-model="SelectLake" id="selectitem" placeholder="Choose a Lake" data-tabindex="1" style="width:23%" required> 
+                <span class=dropdown @onclick="toggleDropdown()" onFocus="this.size=5" onBlur="this.size=1; this.blur()" v-html="selector" style="text-align: center"></span>
+             <!-- <a class="btn btn-primary btn-md" href="#" target="_blank">Search Boats</a> -->
+                    <option value="0"> --- Please Select --- </option>
+                    <option value="1">Brookville</option>
+                    <option value="2">Cataract Lake (Cagles Mill Lake)</option>
+                    <option value="3">Eagle Creek Reservoir</option>
+                    <option value="4">Freeman</option>
+                    <option value="5">Geist Reservoir</option>
+                    <option value="6">Griffy Lake</option>
+                    <option value="7">Huntington Lake (J. Edward Roush)</option>
+                    <option value="8">James</option>
+                    <option value="9">Tippecanoe</option>
+                    <option value="10">Lemon</option>
+                    <option value="11">Maxinkuckee</option>
+                    <option value="12">Michigan</option>
+                    <option value="13">Mississenewa Lake</option>
+                    <option value="14">Monroe (Reservoir)</option>
+                    <option value="15">Morse Lake</option>
+                    <option value="16">Patoka Lake</option>
+                    <option value="17">Raccoon Lake</option>
+                    <option value="18">Salamonie Lake</option>
+                    <option value="19">Shafer</option>
+                    <option value="20">Wawasee</option>
+                    <option value="21">Webster Lake</option>
+                    <option value="22">Witmer Lake</option>
+                </select>
+            </center>
+        <div class="row">
+           <a class="btn btn-primary btn-md" href="/searches">Search Boats</a>
+        </div>
+        <div class="row">
+            <p><!-- <hr> --></p>
+        </div>
+    </div>
+</section>
+
+
+<!-- <section>
+    <div class="page-header">
+        <h1>{{vm.search._id ? 'Edit Search' : 'Search by Lake'}}</h1>
+    </div>
+    <div class="col-6 col-sm-3">
+        <form name="vm.form.searchForm" class="form-horizontal" ng-submit="vm.save(vm.form.searchForm.$valid)" novalidate>
+            <fieldset>
+                <div class="form-group" show-errors>
+                    <label class="control-label" for="indiana lakes"><h3>Indiana Lakes</h3></label><br>
+                    <input name="indiana lakes" type="text" ng-model="vm.search.indiana lakes" id="indiana lakes" class="form-control" placeholder="Choose a Lake" required>
+
+                    <div ng-messages="vm.form.searchForm.name.$error" role="alert">
+                        <p class="help-block error-text" ng-message="required">Lake name is required.</p>
+                    </div>
+                </div>
+        
+                <div class="form-group">
+                    <button type="submit" class="btn btn-default">Search</button>
+                </div>
+
+                <div ng-show="vm.error" class="text-danger">
+                    <strong ng-bind="vm.error"></strong>
+                </div>  
+            </fieldset>
+        </form>
+    </div>
+</section>
+
+ -->
+
+
+<!-- <section>
+    <div class="page-header">
+        <h1>{{vm.search._id ? 'Edit Search' : 'Search by Lake'}}</h1>
+    </div>
+    <div class="col-6 col-sm-3">
+        <form name="vm.form.searchForm" class="form-horizontal" ng-submit="vm.save(vm.form.searchForm.$valid)" novalidate>
+            <fieldset>
+                <div class="form-group" show-errors>
+                    <label class="control-label" for="name">Indiana Lakes</label>
+                    <input name="name" type="text" ng-model="vm.search.name" id="name" class="form-control" placeholder="Choose a Lake" required>
+                    <div ng-messages="vm.form.searchForm.name.$error" role="alert">
+                        <p class="help-block error-text" ng-message="required">Search name is required.</p>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <button type="submit" class="btn btn-default">{{vm.search._id ? 'Update' : 'Search'}}</button>
+                </div>
+
+                <div ng-show="vm.error" class="text-danger">
+                    <strong ng-bind="vm.error"></strong>
+                </div>  
+            </fieldset>
+        </form>
+    </div>
+</section>
+
+
+ -->
+
+
+
+
+
+
