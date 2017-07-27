@@ -7,10 +7,10 @@
         <form name="articleForm" class="form-horizontal" ng-submit="create(articleForm.$valid)" novalidate>
             <fieldset>
                 <div class="form-group" show-errors>
-                    <label for="title">Headline</label>
-                    <input name="title" type="text" ng-model="title" id="title" class="form-control" placeholder="Title" required>
+                    <label for="title">Lake Location</label>
+                    <input name="title" type="text" ng-model="title" id="title" class="form-control" placeholder="Name of Lake" required>
                     <div ng-messages="articleForm.title.$error" role="alert">
-                        <p class="help-block error-text" ng-message="required">Headline is required.</p>
+                        <p class="help-block error-text" ng-message="required">Lake location is required.</p>
                     </div>
                 </div>
 
