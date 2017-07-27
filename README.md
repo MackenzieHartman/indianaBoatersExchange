@@ -1,9 +1,5 @@
-[![UserChart.jpg](https://s1.postimg.org/4zwi6dcvj/home.jpg/);
-[![UserChart.jpg](hthttps://s17.postimg.org/jx2po4sfz/boats.jpg/);
-
-
-
-
+[![home.jpg](https://s1.postimg.org/4zwi6dcvj/home.jpg/);
+[![boats.jpg](hthttps://s17.postimg.org/jx2po4sfz/boats.jpg/);
 
 
 [![MEAN.JS Logo](http://meanjs.org/img/logo-small.png)](http://meanjs.org/)
